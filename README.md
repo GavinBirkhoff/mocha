@@ -67,6 +67,9 @@ npx mocha --reporter mochawesome
 ```
 cd demo04 && npx mocha --require @babel/register
 ```
+$ ../node_modules/mocha/bin/mocha --compilers js:babel-core/register
+上面代码表示，运行测试之前，先用babel-core/register模块，处理一下.js文件
+Babel 6: --compilers js:babel-core/register becomes --require babel-core/register
 # demo05 异步测试
 
 ```
